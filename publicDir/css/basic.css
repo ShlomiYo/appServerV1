@@ -1,0 +1,31 @@
+
+*{
+
+	margin:0px;
+	padding:0px;
+	outline:none;
+	direction: rtl;
+}
+
+aside, article, header, nav, section, main , footer, body {
+	
+	display:block;
+}
+
+
+body{
+
+	background-color: #FFFFFF;
+}
+
+
+#wrapper{
+
+	background-image:url("./../img/bg.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+ main{
+
+ 	text-align:center;
+ }
