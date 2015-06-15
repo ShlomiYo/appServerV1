@@ -89,7 +89,6 @@ app.post("/login", function(req, res){
 
 				console.log('\n\nUser Logged : ' + myUserRes.mail);
 
-       			 res.writeHeader(200, {"Content-Type": "text/html"});
 			    res.sendFile( __dirname + "/home.html");
 
 			}
