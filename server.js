@@ -23,7 +23,6 @@ app.use('/publicDir/js',express.static(path.join(__dirname, 'publicDir/js')));
 app.use('/publicDir/css',express.static(path.join(__dirname, 'publicDir/css')));
 app.use('/publicDir/js/lib/angular',express.static(path.join(__dirname, 'publicDir/js/lib/angular')));
 app.use('/publicDir/css/bootstrap',express.static(path.join(__dirname, 'publicDir/css/bootstrap')));
-app.use('/publicDir/js/jquery-2.1.1.min',express.static(path.join(__dirname, 'publicDir/js/jquery-2.1.1.min')));
 
 
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -80,7 +79,7 @@ app.post("/login", function(req, res){
 			if(myUserRes == null){
 
 
-				console.log('\n\nUSER FAILED RESPONSE '+myUserRes);
+				console.log('\n\nUSER FAILED RESPONSE');
 				res.writeHead(200);
 				res.write("Failed Loging in, Please Check Your Login Info Once More p=");
 				res.end();
@@ -90,8 +89,7 @@ app.post("/login", function(req, res){
 
 				console.log('\n\nUser Logged : ' + myUserRes.mail);
 
-		
-			  // res.send(myUserRes);
+       			 res.writeHeader(200, {"Content-Type": "text/html"});
 			    res.sendFile( __dirname + "/home.html");
 
 			}
