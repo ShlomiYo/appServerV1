@@ -23,7 +23,7 @@ app.use('/publicDir/js',express.static(path.join(__dirname, 'publicDir/js')));
 app.use('/publicDir/css',express.static(path.join(__dirname, 'publicDir/css')));
 app.use('/publicDir/js/lib/angular',express.static(path.join(__dirname, 'publicDir/js/lib/angular')));
 app.use('/publicDir/css/bootstrap',express.static(path.join(__dirname, 'publicDir/css/bootstrap')));
-app.use('http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js',express.static(path.join(__dirname, 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')));
+app.use('/publicDir/js/jquery-2.1.1.min',express.static(path.join(__dirname, 'publicDir/js/jquery-2.1.1.min')));
 
 
 app.use(bodyParser.urlencoded({ extended: false }));
