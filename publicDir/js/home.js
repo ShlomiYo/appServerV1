@@ -1,8 +1,6 @@
 
 
 
-$( document ).ready(function() {
-
 
 
 		document.getElementById('wrapper').style.height =  $(window).height() + "px";
@@ -16,5 +14,3 @@ $( document ).ready(function() {
 
 	}
 
-
-});
