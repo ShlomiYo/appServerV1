@@ -181,13 +181,13 @@ app.post("/reg", function(req, res){
 
 			}
 				mongoose.disconnect();
+				db.close();
 
 
 		});
 
 
 	});
-				db.close();
 
 
 
