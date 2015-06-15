@@ -79,7 +79,7 @@ app.post("/login", function(req, res){
 			if(myUserRes == null){
 
 
-				console.log('\n\nUSER FAILED RESPONSE');
+				console.log('\n\nUSER FAILED RESPONSE '+myUserRes);
 				res.writeHead(200);
 				res.write("Failed Loging in, Please Check Your Login Info Once More p=");
 				res.end();
@@ -95,11 +95,11 @@ app.post("/login", function(req, res){
 
 			}
 			mongoose.disconnect();
+			db.close();
 		});
 
 
 	});
-			db.close();
 
 
 
